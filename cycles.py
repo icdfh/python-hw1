@@ -134,3 +134,28 @@
 
 # def qwerty():
 #     pass
+
+
+print("-------Мини касса--------")
+print("Введите цену товара. 'pay' -> завершить: ")
+
+total = 0
+while True:
+    data = input("Цена: ")
+
+    if data == "pay":
+        break
+    
+    if data == "":
+        continue
+
+    price = float(data)
+
+    if price < 0:
+        print("Цена не может быть меньше 0")
+        continue
+
+    total += price
+    print("Текущая сумма: ", total)
+
+print("Итого к оплате", total)

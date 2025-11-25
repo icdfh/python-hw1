@@ -1,1 +1,2 @@
-print("All was deleted")
+# for i in range(1, 10):
+
