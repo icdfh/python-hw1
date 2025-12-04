@@ -320,3 +320,16 @@
 #     if i in vowels:
 #         count += 1
 # print(count)
+
+# a = 5
+
+# include <iostream>
+# include <string>
+
+# using namespace std
+
+# int main(){
+#     let a = 5 (Number)
+#     cout << a
+
+# }
