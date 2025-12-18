@@ -1,10 +1,11 @@
 # Это наша база
 products = []
 # Функция добавление товара
-def add_product(name,price):
+def add_product(name,price,count):
     product = {
         "name": name,
-        "price": price
+        "price": price,
+        "count": count
     }
     products.append(product)
 
@@ -22,7 +23,7 @@ def show_products():
 def get_total_price():
     total = 0
     for product in products:
-        total += product["price"]
+        total += product["price"] * product["count"]
     return total
     
 # Функция меню
@@ -39,7 +40,8 @@ while(True):
     if choice == "1":
         name = input("Название товара: ")
         price = int(input("Цена товара: "))
-        add_product(name,price)
+        count = int(input("Количество: "))
+        add_product(name,price,count)
     elif choice == "2":
         show_products()
     elif choice == "3":
